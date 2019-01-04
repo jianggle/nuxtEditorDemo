@@ -1,30 +1,6 @@
 <template>
-    <div class="demoWrapper">
-        <my-editor v-model="editorContent" placeholder="请输入啦！"/>
-        <div class="demoHtml">
-            {{editorContent}}
-        </div>
+    <div>
+        <p>1、<nuxt-link to="/quill_demo">quill_demo</nuxt-link></p>
+        <p>2、<nuxt-link to="/ueditor_demo">ueditor_demo</nuxt-link></p>
     </div>
 </template>
-<script>
-import myEditor from '~/components/myEditor'
-export default {
-    components: {
-        myEditor
-    },
-    data(){
-        return {
-            editorContent: ''
-        }
-    }
-}
-</script>
-<style lang="scss">
-.demoWrapper{
-    width: 66%;
-    margin: 30px;
-    .demoHtml{
-        word-break: break-all;
-    }
-}
-</style>
