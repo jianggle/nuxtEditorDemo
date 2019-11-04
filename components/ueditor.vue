@@ -1,7 +1,7 @@
 <template>
 <div>
     <script type="text/plain" :id="dynamicId" :style="editorWrapStyle"></script>
-    <img-manager 
+    <img-manager
         :showImgManager="showImgManager"
         @close="showImgManager=false"
         :limit="9"
@@ -254,7 +254,16 @@ export default {
 }
 </script>
 <style lang="scss">
-.edui-default .edui-for-h3 .edui-icon{
-    background: url('/assets/images/editor_h.png') no-repeat center center!important;
+.edui-default .edui-for-h3 .edui-icon {
+	background-image: none !important;
+	&::before {
+		content: 'H';
+		line-height: 20px;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+		color: #444;
+	}
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div class="">
     <textarea :id="dynamicId" style="visibility:hidden;" v-model="value"></textarea>
-    <img-manager 
+    <img-manager
         :showImgManager="showImgManager"
         :limit="9"
         @close="showImgManager=false"
@@ -171,20 +171,33 @@ export default {
 .ke-icon-h3,
 .ke-icon-blockquote,
 .ke-icon-imageMe,
-.ke-icon-indentMe{
-    width: 16px;
-    height: 16px;
+.ke-icon-indentMe {
+	width: 16px;
+	height: 16px;
 }
-.ke-icon-h3 {
-    background: url('/assets/images/editor_h.png') no-repeat center center!important;
-}
+.ke-icon-h3,
 .ke-icon-blockquote {
-    background: url('/assets/images/editor_blockquote.png') no-repeat center center!important;
+	background-image: none !important;
+	text-align: center;
+	&::before {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: bold;
+		color: #333;
+	}
+}
+.ke-icon-h3::before {
+	content: 'H';
+}
+.ke-icon-blockquote::before {
+	content: '”';
+	font-size: 28px;
+	line-height: 28px;
 }
 .ke-icon-imageMe {
-    background-position: 0px -496px;
+	background-position: 0px -496px;
 }
 .ke-icon-indentMe {
-    background-position: 0px -240px;
+	background-position: 0px -240px;
 }
 </style>
