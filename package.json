@@ -8,31 +8,17 @@
 		"dev": "nuxt",
 		"build": "nuxt build",
 		"start": "nuxt start",
-		"generate": "nuxt generate",
-		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-		"precommit": "npm run lint"
-	},
-	"config": {
-		"nuxt": {
-			"host": "0.0.0.0",
-			"port": "8887"
-		}
+		"generate": "nuxt generate"
 	},
 	"dependencies": {
-		"axios": "^0.18.1",
-		"element-ui": "^2.4.7",
-		"nuxt": "^1.0.0",
+		"axios": "^0.19.2",
+		"element-ui": "^2.13.2",
+		"nuxt": "^2.14.1",
 		"vue-quill-editor": "^3.0.6"
 	},
 	"devDependencies": {
-		"babel-eslint": "^8.2.1",
 		"babel-plugin-component": "^1.1.1",
-		"babel-polyfill": "^6.26.0",
-		"eslint": "^4.15.0",
-		"eslint-friendly-formatter": "^3.0.0",
-		"eslint-loader": "^1.7.1",
-		"eslint-plugin-vue": "^4.0.0",
-		"node-sass": "^4.9.3",
-		"sass-loader": "^7.1.0"
+		"node-sass": "^4.14.1",
+		"sass-loader": "^9.0.2"
 	}
 }
