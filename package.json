@@ -11,7 +11,7 @@
 		"generate": "nuxt generate"
 	},
 	"dependencies": {
-		"axios": "^0.19.2",
+		"axios": "^0.21.1",
 		"element-ui": "^2.13.2",
 		"nuxt": "^2.14.1",
 		"vue-quill-editor": "^3.0.6"
